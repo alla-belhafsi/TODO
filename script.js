@@ -1,4 +1,4 @@
-// Sélectionnez l'élément de modèle initial de la tâche et le conteneur des tâches
+// Sélectionne l'élément de modèle initial de la tâche et le conteneur des tâches
 const taskCard = document.querySelector(".todoCard");
 const tasksContainer = document.querySelector("#todo");
 
@@ -30,15 +30,15 @@ function addTask() {
     // Définir le texte de la nouvelle tâche sur "New Task"
     newTextArea.value = "New Task";
     
-    // Ajoutez un gestionnaire d'événement de clic pour la suppression de la tâche
+    // Ajoute un gestionnaire d'événement de clic pour la suppression de la tâche
     newDelBtn.addEventListener('click', function(){ 
         deleteTask(newTask); 
     });
 
-    // Ajoutez la nouvelle tâche au conteneur des tâches
+    // Ajoute la nouvelle tâche au conteneur des tâches
     tasksContainer.appendChild(newTask);
 
-    // Mettez à jour le compteur du nombre de tâches
+    // Mettre à jour le compteur du nombre de tâches
     updateCount();
 }
 
@@ -46,7 +46,7 @@ function addTask() {
 function deleteTask(task){
     task.remove(); 
 
-    // Mettez à jour le compteur du nombre de tâches
+    // Mettre à jour le compteur du nombre de tâches
     updateCount();
 }
 
