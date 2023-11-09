@@ -1,6 +1,6 @@
 // Sélectionne l'élément de modèle initial de la tâche et le conteneur des tâches
 const taskCard = document.querySelector(".todoCard");
-const tasksContainer = document.querySelector("#todo");
+const tasksContainer = document.querySelector(".todoCards");
 
 // Sélectionne le bouton "Add a task" et ajoute un gestionnaire d'événement de clic
 const addBtn = document.querySelector('#btn');
