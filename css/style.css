@@ -21,9 +21,9 @@
 
 .delBtn {
     position: absolute;
-    right: 5px;  /* Ajustez cette valeur selon votre préférence */
-    top: 209px;    /* Ajustez cette valeur selon votre préférence */
-    cursor: pointer; /* Pour ajouter un curseur pointeur */
+    right: 5px;  
+    top: 209px;    
+    cursor: pointer; 
 }
 
 #btn {

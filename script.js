@@ -61,12 +61,12 @@ function updateCount() {
     const addTaskButton = document.querySelector('#btn');
 
     // Modifie le texte du bouton en fonction du nombre de tâches
-    if (taskCount === 0) {
+    if (taskCount === 0) { 
         addTaskButton.textContent = "Create task";
     } else {
         addTaskButton.textContent = "Add task";
 
-        // Ajoute du padding horizontal en fonction du nombre de tâches
+        // Ajout de padding horizontal en fonction du nombre de tâches
         const paddingValue =  taskCount * 55.4 + "px"; // Ajustement de la valeur
         addTaskButton.style.paddingLeft = paddingValue;
         addTaskButton.style.paddingRight = paddingValue;
