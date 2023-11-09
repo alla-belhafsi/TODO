@@ -9,3 +9,13 @@
     flex-direction: row;
 }
 
+.todoCard {
+    position: relative;
+}
+
+.delBtn {
+    position: absolute;
+    right: 5px;  /* Ajustez cette valeur selon votre préférence */
+    top: 205px;    /* Ajustez cette valeur selon votre préférence */
+    cursor: pointer; /* Pour ajouter un curseur pointeur */
+}

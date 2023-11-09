@@ -56,4 +56,14 @@ function updateCount() {
     const taskCount = tasksContainer.querySelectorAll('.todoCard').length;
     const countElement = document.querySelector("#count");
     countElement.textContent = taskCount + " task" + (taskCount !== 1 ? "s" : "");
+
+    // Sélectionnez le bouton par son identifiant
+    const addTaskButton = document.querySelector('#btn');
+
+    // Modifiez le texte du bouton en fonction du nombre de tâches
+    if (taskCount === 0) {
+        addTaskButton.textContent = "Create task";
+    } else {
+        addTaskButton.textContent = "Add task";
+    }
 }
